@@ -2,7 +2,7 @@
 
 Links:
 
-Site (Vercel): movieplayer-site.vercel.app
+Site (Vercel): movieplayer-site2.vercel.app
 
 Backend API (Render): https://movieplayer-backend.onrender.com
 
