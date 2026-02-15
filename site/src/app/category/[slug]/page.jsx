@@ -34,7 +34,7 @@ export default function CategoryPage() {
 
                             <div className="bg-gray-800 rounded-lg overflow-hidden">
                                 <img
-                                    src={`${process.env.NEXT_PUBLIC_API_BASE_URL}/uploads/movie/${movie.poster}`}
+                                    src={movie.poster}
                                     alt={movie.title}
                                     className="h-48 w-full object-cover"
                                 />

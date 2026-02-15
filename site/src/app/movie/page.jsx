@@ -29,7 +29,7 @@ export default function page() {
 
                                 <div className="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200">
                                     <img
-                                        src={`${process.env.NEXT_PUBLIC_API_BASE_URL}/uploads/movie/${movie.poster}`}
+                                        src={movie.poster}
                                         alt={movie.title}
                                         className="h-52 w-full object-cover"
                                     />
