@@ -122,7 +122,7 @@ export default function Header() {
                         />
 
                         {searchItem && (
-                            <div className="absolute mt-28 w-64 rounded bg-gray-800 shadow-lg z-50">
+                            <div className="absolute top-full left-0 mt-2 w-64 max-h-60 overflow-y-auto rounded bg-gray-800 shadow-lg z-50">
                                 {filteredUsers.length === 0 ? (
                                     <p className="p-2 text-sm text-gray-400">No movies found</p>
                                 ) : (
@@ -130,7 +130,7 @@ export default function Header() {
                                         <Link
                                             key={user._id}
                                             href={`/movie/${user._id}`}
-                                            className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
+                                            className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition"
                                         >
                                             {user.title}
                                         </Link>
@@ -168,7 +168,7 @@ export default function Header() {
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-50" />
 
-                <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                <DialogPanel className="fixed inset-y-0 right-0 z-50  w-80 max-w-[85%] overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
                     <div className="flex items-center justify-between">
 
                         {/* logo */}
@@ -225,17 +225,17 @@ export default function Header() {
                                 </Disclosure>
 
                                 {/* search */}
-                                <div>
+                                <div className="relative w-full sm:w-auto">
                                     <input
                                         value={searchItem}
                                         onChange={handleInputChange}
                                         type="search"
                                         placeholder="Search movies…"
-                                        className="h-7 w-52 rounded-md bg-gray-800 px-3 text-[12px] text-white placeholder-gray-400 outline-none ring-1 ring-gray-700 focus:ring-red-500"
+                                        className="h-7 sm:h-7 w-full sm:w-52 rounded-md bg-gray-800 px-3 text-[12px] text-white placeholder-gray-400 outline-none ring-1 ring-gray-700 focus:ring-red-500"
                                     />
 
                                     {searchItem && (
-                                        <div className="absolute mt-2 w-64 rounded bg-gray-800 shadow-lg z-50">
+                                        <div className="absolute left-0 right-0 mt-2 w-full sm:w-64 rounded  max-h-60 overflow-y-auto bg-gray-800 shadow-lg z-50">
                                             {filteredUsers.length === 0 ? (
                                                 <p className="p-2 text-sm text-gray-400">No movies found</p>
                                             ) : (
@@ -243,7 +243,7 @@ export default function Header() {
                                                     <Link
                                                         key={user._id}
                                                         href={`/movie/${user._id}`}
-                                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
+                                                        className="block px-4 py-2 sm:py-2 text-sm text-white hover:bg-gray-700"
                                                     >
                                                         {user.title}
                                                     </Link>
