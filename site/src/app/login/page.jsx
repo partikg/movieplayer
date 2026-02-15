@@ -34,13 +34,13 @@ export default function login() {
 
     return (
         <>
-            <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+            <div className="min-h-screen flex flex-col justify-center px-4 sm:px-6 py-12">
 
-                <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+                <div className="sm:mx-auto sm:w-full sm:max-w-md">
                     <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-white">Log in to your account</h2>
                 </div>
 
-                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
 
                     <form onSubmit={handleLogin} method="POST" className="space-y-6">
                         <div>
@@ -55,7 +55,7 @@ export default function login() {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     autoComplete="email"
-                                    className="block w-full rounded-md ..."
+                                    className="py-2 text-base block w-full rounded-md ..."
                                 />
 
                             </div>
@@ -80,7 +80,7 @@ export default function login() {
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                     autoComplete="current-password"
-                                    className="block w-full rounded-md ..."
+                                    className="py-2 text-base block w-full rounded-md ..."
                                 />
 
                             </div>

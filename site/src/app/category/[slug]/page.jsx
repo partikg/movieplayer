@@ -21,12 +21,12 @@ export default function CategoryPage() {
     }, [slug])
 
     return (
-        <div className="max-w-7xl mx-auto p-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
             <h1 className="text-2xl font-bold text-white mb-6">
                 Movies
             </h1>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
                 {movies.length > 0 ? (
                     movies.map(movie => (
 
@@ -36,13 +36,13 @@ export default function CategoryPage() {
                                 <img
                                     src={movie.poster}
                                     alt={movie.title}
-                                    className="h-48 w-full object-cover"
+                                    className="aspect-[2/3] w-full object-cover"
                                 />
                                 <div className="p-2">
                                     <h2 className="text-white font-semibold text-sm">
                                         {movie.title}
                                     </h2>
-                                    <p className="text-gray-400 text-xs">
+                                    <p className="text-white font-semibold text-sm line-clamp-1">
                                         {movie.year}
                                     </p>
                                 </div>

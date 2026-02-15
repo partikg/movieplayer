@@ -24,8 +24,8 @@ export default function page() {
     if (!user) return <div>Loading...</div>
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-900">
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 text-white">
+        <div className="min-h-screen space-y-3 flex items-center justify-center px-4 bg-gray-900">
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-sm text-white">
                 <h1 className="text-xl font-semibold mb-4 text-center">
                     Profile
                 </h1>

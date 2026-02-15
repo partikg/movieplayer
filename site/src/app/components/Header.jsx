@@ -51,7 +51,7 @@ export default function Header() {
     return (
         <header className="bg-gray-900 border border-gray-800 sticky top-0 z-50">
 
-            <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between h-12 px-4 lg:px-6">
+            <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between min-h-12 py-2 px-4 lg:px-6">
 
                 {/* logo */}
                 <div className="flex lg:flex-1">
@@ -59,7 +59,7 @@ export default function Header() {
                         <span className="sr-only">Home</span>
                         <img
                             alt=""
-                            src="movieslogo.avif"
+                            src="/movieslogo.avif"
                             className="h-10 w-24 rounded-xl"
                         />
                     </Link>

@@ -24,7 +24,7 @@ export default function Home() {
           Popular Movies and TV Shows
         </h2>
 
-        <p className="text-gray-400 text-sm w-2xl">
+        <p className="text-gray-400 text-sm max-w-2xl">
           Discover today's most-watched movies and TV shows available on Netflix,
           Prime Video, Hotstar, and more. Filter by genre and find
           what to watch next.
@@ -46,7 +46,7 @@ export default function Home() {
                   <img
                     src={movie.poster}
                     alt={movie.title}
-                    className="h-48 w-full object-cover"
+                    className="h-40 sm:h-48 w-full object-cover"
                   />
                   <div className="p-3">
                     <h2 className="font-medium text-sm line-clamp-1">

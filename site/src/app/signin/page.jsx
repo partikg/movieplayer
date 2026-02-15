@@ -35,14 +35,14 @@ export default function signin() {
 
     return (
         <>
-            <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+            <div className="flex min-h-screen px-4 sm:px-6 flex-col justify-center py-12 lg:px-8">
 
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-white">Sign in to your account</h2>
                 </div>
 
-                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form onSubmit={handleSignin} action="#" method="POST" className="space-y-6">
+                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
+                    <form onSubmit={handleSignin} action="#" method="POST" className="space-y-6 ">
 
                         <div>
                             <label htmlFor="text" className="block text-sm/6 font-medium text-gray-100">
@@ -51,7 +51,7 @@ export default function signin() {
                             <div className="mt-2">
                                 <input
                                     type="text"
-                                    className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-white"
+                                    className="block py-2 text-base w-full rounded-md bg-white/5 px-3  text-white"
                                     onChange={e => setName(e.target.value)}
                                     required
                                 />

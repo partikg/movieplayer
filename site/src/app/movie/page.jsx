@@ -22,16 +22,16 @@ export default function page() {
                     Browse Movies
                 </h2>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-5">
                     {movies.length > 0 ? (
                         movies.map(movie => (
                             <Link key={movie._id} href={`/movie/${movie._id}`}>
 
-                                <div className="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200">
+                                <div className="bg-gray-800 rounded-lg overflow-hidden sm:hover:scale-105 transition-transform duration-200">
                                     <img
                                         src={movie.poster}
                                         alt={movie.title}
-                                        className="h-52 w-full object-cover"
+                                        className="aspect-[2/3] w-full object-cover"
                                     />
                                     <div className="p-3">
                                         <h2 className="text-white font-medium text-sm truncate">

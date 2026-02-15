@@ -22,15 +22,16 @@ export default function page() {
     return (
         <div className="px-4 py-6">
 
-            <div className="bg-gray-800 rounded-lg p-4 max-w-4xl mx-auto">
+            <div className="bg-gray-800 rounded-lg px-4 sm:px-6 py-6 max-w-2xl mx-auto">
                 <img
                     src={movie.poster}
                     alt={movie.title}
-                    className="h-80 w-full object-cover rounded-md"
+                    className="aspect-[2/3] w-full max-w-xs sm:max-w-sm mx-auto object-cover rounded-md"
                 />
 
-                <h2 className="text-white font-bold text-3xl mt-4">
-                    {movie.title} <span className="text-gray-400">({movie.year})</span>
+                <h2 className="text-white font-bold text-xl sm:text-2xl md:text-3xl mt-4">
+                    {movie.title}
+                    <span className="text-gray-400">({movie.year})</span>
                 </h2>
 
                 <h3 className="text-gray-300 mt-2">
