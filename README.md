@@ -12,7 +12,7 @@ Admin Panel (Vercel): movieplayer-adminpanel.vercel.app
 
 Project Structure:
 
-movieplayer/
+Movie-Search-Site/
 
   api/              - Backend (Express + MongoDB)
 
